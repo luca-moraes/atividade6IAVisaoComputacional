@@ -3,8 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Carregans imagem
-img = cv2.imread('./imagens/FEI01.jpg')
-
+img = cv2.imread('./imagens/AVIAO_01.jpg')
 
 # Convertendo espaço de cores
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -19,6 +18,5 @@ for i in range(4):
     plt.subplot(2,2,i+1)
     plt.imshow(imagens[i],'gray')
     plt.xticks([]),plt.yticks([])
-plt.show()
 
-plt.show()
+plt.savefig("./imagens/aviao/espacoCores.jpg")
