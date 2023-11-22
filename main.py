@@ -110,8 +110,8 @@ def contorno(img, dir, ki, ti):
     plt.savefig(f'{dir}/contorno-k:{ki}-t:{ti:.4f}.jpg')
     plt.close()
 
-imagem = "./imagens/AVIAO_01.jpg"
-diretorio = "./imagens/aviao"
+imagem = "./imagens/CASTELO_01.jpg"
+diretorio = "./imagens/castelo"
 
 opMorfo(imagem, diretorio)
 espacoCores(imagem, diretorio)
