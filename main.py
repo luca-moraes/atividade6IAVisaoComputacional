@@ -110,17 +110,20 @@ def contorno(img, dir, ki, ti):
     plt.savefig(f'{dir}/contorno-k:{ki}-t:{ti:.4f}.jpg')
     plt.close()
 
-imagem = "./imagens/CASTELO_01.jpg"
-diretorio = "./imagens/castelo"
+imagem = "./imagens/AVIAO_01.jpg"
+diretorio = "./imagens/aviao"
 
-#opMorfo(imagem, diretorio)
-#espacoCores(imagem, diretorio)
+opMorfo(imagem, diretorio)
+espacoCores(imagem, diretorio)
 
 # CAStelop - k de 0 a 10 n muda; tresh 1.4
 # aviao - k7 oy k5; t 1.1 ou 1.350
 
-for i in range (1, 12):
-    tresh = 1.4
-    contorno(imagem, diretorio, i, tresh)
+tresh = 1.350
+contorno(imagem, diretorio, 7, tresh)
+
+# for i in range (1, 12):
+#     tresh = 1.350
+#     contorno(imagem, diretorio, i, tresh)
 
 print("Concluído!")
